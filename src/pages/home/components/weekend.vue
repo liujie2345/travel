@@ -4,7 +4,7 @@
     <ul>
       <li
         class="item border-bottom"
-        v-for="item of recommendList"
+        v-for="item of list"
         :key="item.id"
       >
         <div class="item-img-wrapper">
@@ -22,31 +22,9 @@
 <script>
 export default {
   name: 'Weekend',
-   data() {
-        return{
-            recommendList:[{
-                id:"001",
-                imgUrl:"http://img1.qunarzz.com/sight/source/1505/f1/ae9d4299b8aaea.jpg_r_640x214_0c555905.jpg",
-                title:"大连圣亚海洋世界",
-                desc:"浪漫大连首战，浪漫的海洋主题乐园"
-            },{
-                id:"002",
-                imgUrl:"http://img1.qunarzz.com/sight/p0/1505/f4/f455d92ba582f608.water.jpg_200x200_375e5775.jpg",
-                title:"大连圣亚海洋世界",
-                desc:"浪漫大连首战，浪漫的海洋主题乐园"
-            },{
-                id:"003",
-                imgUrl:"http://img1.qunarzz.com/sight/p0/1505/f4/f455d92ba582f608.water.jpg_200x200_375e5775.jpg",
-                title:"大连圣亚海洋世界",
-                desc:"浪漫大连首战，浪漫的海洋主题乐园"
-            },{
-                id:"004",
-                imgUrl:"http://img1.qunarzz.com/sight/p0/1505/f4/f455d92ba582f608.water.jpg_200x200_375e5775.jpg",
-                title:"大连圣亚海洋世界",
-                desc:"浪漫大连首战，浪漫的海洋主题乐园"
-            },]
-        } 
-    }    
+  props:{
+    list:Array
+  } 
 }
 </script>
 
