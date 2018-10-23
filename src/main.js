@@ -4,12 +4,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import fastClick from 'fastclick'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import store from './store'
 import 'style/reset.css'
 import 'style/border.css'
 import 'style/iconfont.css'
-import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
-import store from './store'
+
 
 Vue.config.productionTip = false
 Vue.use(VueAwesomeSwiper)
